@@ -13,12 +13,13 @@ import pandas as pd
 today = date.today()
 
 # This table holds the liast of tickers for our current holdings.
-tickerList = ['ASAI','TSM','LPL','KT','PKX','FN','NTES','SQM','YNDX','ANPDY',
+# NOTE: The holding with the earliest purchase date MUST BE FIRST!
+tickerList = ['TSM','ASAI','LPL','KT','PKX','FN','NTES','SQM','YNDX','ANPDY',
               'MMYT','AU','TCEHY','JD','WNS','GRVY','PAGS','EBR','NIO','RDY',
               'YUMC','PBR','TME','WIT','TGLS']
 
 # This table holds the corresponding purchase date for each of the holdings
-startList = ['3/8/2021','2/22/2013','2/19/2015','2/4/2016','4/15/2016',
+startList = ['2/22/2013','3/8/2021','2/19/2015','2/4/2016','4/15/2016',
              '11/21/2016','12/8/16','5/11/17','5/25/17','5/25/18','6/8/17',
              '4/7/21','11/30/17','11/30/17','1/25/18','2/27/2019','3/21/2019',
              '1/21/2021','2/1/2022','2/1/2022','2/10/2022','2/28/2022',
