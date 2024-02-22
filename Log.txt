@@ -1,1 +1,0 @@
-- Two of our holdings, RZZRY and BTSGY, do not have purchase dates, so this script won't work for them.
