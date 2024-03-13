@@ -80,7 +80,8 @@ def Portfolio_Returns(daily_price_data, portfolio_composition):
     # Display the first few rows of the portfolio and IEMG daily returns for inspection
     #print(portfolio_daily_returns.head(), iemg_daily_returns.head())
 
-    """# Plot the daily returns of the portfolio and the IEMG index
+    # Plot the daily returns of the portfolio and the IEMG index
+    """
     plt.figure(figsize=(14, 7))
     plt.plot(portfolio_daily_returns, label='Portfolio Daily Returns')
     plt.plot(iemg_daily_returns, label='IEMG Daily Returns', alpha=0.75)
@@ -92,4 +93,6 @@ def Portfolio_Returns(daily_price_data, portfolio_composition):
     plt.show()"""
 
     print("Done!")
+    portfolio_weights = portfolio_values.div(portfolio_total_value, axis=0)
+    print(portfolio_weights)
     return Portfolio_Analyze(portfolio_daily_returns, iemg_daily_returns, portfolio_total_value)

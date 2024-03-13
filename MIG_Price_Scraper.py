@@ -31,7 +31,8 @@ def scrape(portfolio):
         in the "prices" dataframe. If you can think of a more elegant way to do 
         this, do it yourself."""
     for i, row in portfolio.iterrows():
-        prices[i] = get_data(i,start_date=row[2], end_date=end).close
+        prices[i] = get_data(i,start_date=row[2], end_date=row[3]).close
+
 
     print("Done!")
     return prices
